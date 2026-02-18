@@ -28,10 +28,18 @@ We encourage you to take advantage of Google colab to run the tutorial notebooks
 
 ```console
 foo@bar:~$ git clone https://github.com/austin-mroz/2026-AIMS-BO
-foo@bar:~$ cd 2026-AIMS-BO
+foo@bar:~$ cd 4-BO-for-chemistry
 foo@bar:~$ conda create -p ./.venv python=3.10
 foo@bar:~$ conda activate ./.venv
-foo@bar:~$ pip install git+https://github.com/austin-mroz/summit.git@mac-implementation
+```
+For the BOFire notebook:
+```console
+foo@bar:~$ pip install git+https://github.com/austin-mroz/summit.git@mac-implementation gauche 'bofire[optimization,cheminfo]' matplotlib rdkit
+```
+
+For the BayBE notebook:
+```console
+foo@bar:~$ pip install git+https://github.com/austin-mroz/summit.git@mac-implementation gauche rdkit matplotlib baybe[chem]
 ```
 
 ## case study descriptions
