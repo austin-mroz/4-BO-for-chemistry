@@ -1,0 +1,6 @@
+#!/Users/amroz1/Documents/presentations/teaching/2026_AIMS/2026-AIMS-BO/main/tutorial-notebooks/.aims/bin/python3.9
+import sys
+from tools.flight_recorder.fr_trace import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
